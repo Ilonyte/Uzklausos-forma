@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Skundas</title>
+        <style>
+            body {
+                font-family: calibri;
+                text-align: center;
+                }
+            form {
+                width: 400px;
+                display: inline-block;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>SKUNDO FORMA</h1><br>
+        <form action="skundas.php" method="GET" target="_blank">
+            <label for="first_name"></label>
+            <input type="text" id="first_name" name="mano-vardas" placeholder="Vardas" required>
+
+            <label for="last_name"></label>
+            <input type="text" id="last_name" name="mano-pavarde" placeholder="Pavardė"><br>
+
+
+            <label>
+                <br>
+                <input type="email" placeholder="el.paštas" name="email" required>
+            </label>
+
+            <label>
+                <input type="tel" placeholder="Telefonas" name="phone" required>
+            </label><br><br>
+
+
+            <span>Pasirinkite parduotuvę</span><br>
+            <select name="shop" required>
+                <option value=""></option>
+                <option value="shop_Kaunas">Kaunas.lt</option>
+                <option value="shop_Vilnius">Vilnius.lt</option>
+                <option value="shop_Klaipeda">Klaipeda.lt</option>
+            </select><br><br>
+
+
+            <label>
+                <span>Apsilankymo laikas</span><br>
+                <input type="date" name="visit-date" required>
+            </label><br><br>
+
+            <input type="radio" name="problem_with" value="bad_product">Bloga prekė
+            <br>
+            <input type="radio" name="problem_with" value="service">Aptarnavimas
+            <br>
+            <input type="radio" name="problem_with" value="other">Kiti nusiskundimai<br><br>
+
+            <input type="file" name="image"><br><br><br>
+
+
+            <textarea name="message" rows="10" cols="50"></textarea><br>
+
+            <input type="checkbox" name="privacy_policy" value="privacy_agreed">Patvirtinu, kad susipažinau su <a href="/informacija-klientams/privatumo-politika">Privatumo politika</a>  ir sutinku, kad mano asmens duomenys būtų naudojami joje numatytais duomenų tvarkymo tikslais ir sąlygomis.
+
+            <br><br>
+            <button>Siųsti</button>
+
+        </form>
+    </body>
+</html>
